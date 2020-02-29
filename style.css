@@ -97,7 +97,6 @@ li a:focus {
 img {
     max-width: 100%;
     display: block;
-    height: 100%;
 }
 
 
@@ -204,7 +203,7 @@ header nav.socials-navigation a {
 .mission-image {
     width: 50%;
     height: 406px;
-    background-image: url(./biker-land-assets/image-3.jpg);
+    background-image: url(./biker-land-assets/image-7.jpg);
     background-position: center;
     background-size: cover;
     float: left;
@@ -307,7 +306,16 @@ header nav.socials-navigation a {
     padding: 0 5px;
 }
 
+/* footer styles */
 
+footer {
+    background-color: #1F2022;
+}
+
+footer p,
+footer a {
+    color: #fff;
+}
 
 
 
