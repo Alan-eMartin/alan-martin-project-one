@@ -8,10 +8,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* font-family: 'Catamaran', ;
-    font-family: 'Pacifico', ; */
-
-/* setup snippets begin */
 
 /* global stylings */
 
@@ -43,14 +39,26 @@ h2 {
     
 }
 
+/* button global settings */
+
 h3.read-button {
     font-size: 1.8rem;
     font-family: 'Catamaran', sans-serif;
     color: #F2A11C;
     text-transform: uppercase;
     background-color: #1F2022;
+    border: transparent 4px solid;
     display: inline-block;
     padding: 10px 15px;
+}
+
+h3.read-button:hover,
+h3.read-button:focus {
+    border: #F2A11C 4px solid;
+}
+
+h3 a {
+    color: #F2A11C;
 }
 
 h4 {
@@ -62,16 +70,28 @@ p {
     font-family: 'Catamaran', sans-serif;  
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style: none;
     padding: 0;
 }
 
+/* nav li globals */
+
+
 a {
     text-decoration: none;
     font-family: 'Catamaran';
     color: #fff;
-    /* may need to change color in global / erase when finished */
+}
+li a:hover,
+li a:focus {
+    color: #F2A11C;
 }
 
 img {
@@ -80,15 +100,9 @@ img {
     height: 100%;
 }
 
-a:hover {
-    color: #F2A11C;
-}
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
+
 
 /* end of global styles */
 
@@ -271,7 +285,7 @@ header nav.socials-navigation a {
 
 /* the gram gallery styles */
 
-section.the-gram {
+.the-gram {
     height: 700px;
     
 }
@@ -282,15 +296,15 @@ section.the-gram {
 }
 
 .the-gram ul {
-			list-style: none;
-			clear: both;
+	list-style: none;
+	clear: both;
 }
 
 .the-gram li {
-			width: calc(100%/3);
-			float: left;
-            position: relative;
-            padding: 0 5px;
+	width: calc(100%/3);
+	float: left;
+    position: relative;
+    padding: 0 5px;
 }
 
 
