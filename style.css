@@ -9,6 +9,28 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
+/* Squash
+#F2A11C,
+242, 161, 28
+
+Darker grey
+#1F2022,
+31, 32, 34
+
+Dark grey
+#4A4A4A,
+74, 74, 74
+
+White
+#FFFFFF,
+255, 255, 255
+
+Light grey
+#F4F4F4,
+244, 244, 244 */
+
+
+
 /* global stylings */
 
 html {
@@ -18,6 +40,7 @@ html {
 body {
     font-family:'Catamaran','Pacifico' sans-serif;
     color: #1F2022;
+    line-height: 29px;
 }
 
 .wrapper {
@@ -103,13 +126,11 @@ img {
     display: block;
 }
 
-
-
-
-
 /* end of global styles */
 
-/* header and header-nav styles*/
+
+
+/* header and header styles*/
 
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
@@ -119,11 +140,21 @@ header {
     min-height: 600px;
     clear: both;
 }
-/* help cure having trouble centering the h1 in header without the socials over-lapping eachother  when down sizing viewport- solved through media queries */
+
 nav.header-navigation {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+header i.fa.fa-bars {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    color: white;
+    visibility: hidden;
+
 }
 
 
@@ -160,8 +191,10 @@ header nav.socials-navigation a {
     font-size: 2.5rem;
 }
 
-/* about section styles */
+/* end of header styles */
 
+
+/* about section styles */
 
 .about-container {
     clear: both;
@@ -182,6 +215,9 @@ header nav.socials-navigation a {
     background-size: cover;
     float: left;
 }
+
+/* end of about section styles */
+
 
 /* mission section styles */
 
@@ -209,7 +245,10 @@ header nav.socials-navigation a {
     float: left;
 }
 
-/* blog styles */
+/* end of mission section styles */
+
+
+/* blog section styles */
 
 .blog {
     background-color: #F4F4F4;
@@ -238,6 +277,10 @@ header nav.socials-navigation a {
 .blog-image-inner {
     padding: 75px 0 0 50px;  
 }
+
+/* end of blog section styles */
+
+
 /* product section styles */
 
 .product {
@@ -248,17 +291,12 @@ header nav.socials-navigation a {
     width:100%
 }
 
-
-
-
  .product-navigation ul {
 
    margin: 0 auto;
    clear: both;
    height: 406px;
    padding: 150px 210px;
-   /* padding-left: 24%; */
-
 }
 
 .product-navigation li {
@@ -281,6 +319,9 @@ header nav.socials-navigation a {
     color: #F2A11C;
     font-size: 2.5rem;
 }
+
+/* end of product section styles */
+
 
 /* the gram gallery styles */
 
@@ -305,6 +346,9 @@ header nav.socials-navigation a {
     position: relative;
     padding: 0 5px;
 }
+
+/* end of gram section styles */
+
 
 /* footer styles */
 
@@ -353,9 +397,6 @@ nav.footer-navigation a {
     width: 50%;
 }
 
-/* form styles */
-
-*form {padding: 0; margin: 0;}
 
 .subscribe-form form {
     width: 100%;
@@ -412,31 +453,21 @@ div.copyright {
     bottom: 0;
 }
 
+/* end of footer styles */
 
 
+/* start of media queries */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* max height media querie for screens with less height */
 
 @media (max-height: 600px) {
     header {
         height: auto;
     }
 }
+
+/* end of screen height media queries */
 
 
 
