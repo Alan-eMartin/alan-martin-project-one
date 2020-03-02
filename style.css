@@ -652,7 +652,7 @@ p.copyright {
   }
 
   .subscribe-form form input[type='email'] {
-    padding-left: ;
+    padding-left: 0;
     text-align: center;
   }
 }
