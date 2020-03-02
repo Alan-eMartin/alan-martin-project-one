@@ -37,7 +37,7 @@ html {
 body {
   font-family: 'Catamaran', 'Pacifico' sans-serif;
   color: #1f2022;
-  line-height: 22px;
+  line-height: 29px;
 }
 
 .wrapper {
@@ -48,7 +48,7 @@ body {
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 12rem;
   font-family: 'Pacifico', sans-serif;
   color: #f2a11c;
 }
@@ -160,14 +160,14 @@ header i.fa-bars {
   right: 25px;
   font-size: 1.5rem;
   color: white;
-  visibility: visible;
+  visibility: hidden;
   font-size: 4rem;
 }
 
 h1 {
   float: left;
   margin-top: 170px;
-  width: 69%;
+  width: 71%;
   text-align: right;
 }
 
@@ -190,14 +190,10 @@ header nav.socials-navigation a {
 
 /* about section styles */
 
-.about-container {
-  clear: both;
-}
-
 .about-info {
   width: 50%;
   padding: 50px;
-  float: left;
+  float: right;
   background-color: white;
 }
 
@@ -207,20 +203,12 @@ header nav.socials-navigation a {
   background-image: url(./biker-land-assets/image-2.jpg);
   background-position: center;
   background-size: cover;
-  float: left;
+  float: right;
 }
 
 /* end of about section styles */
 
 /* mission section styles */
-
-.mission {
-  background-color: #fff;
-}
-
-.mission-container {
-  clear: both;
-}
 
 .mission-info {
   width: 50%;
@@ -244,28 +232,22 @@ header nav.socials-navigation a {
 
 .blog {
   background-color: #f4f4f4;
-  clear: both;
-  height: 406px;
+  padding: 50px 0;
 }
 
-.blog-container {
-  clear: both;
+.blog-info,
+.blog-image {
+  float: left;
 }
 
 .blog-info {
-  width: 75%;
-  height: 406px;
-  padding: 50px 50px 50px 0px;
-  float: left;
+  width: calc(75% - 10px);
+  margin-left: 10px;
+  padding-left: 20px;
 }
 
 .blog-image {
   width: 25%;
-  float: left;
-}
-
-.blog-image-inner {
-  padding: 75px 0 0 50px;
 }
 
 /* end of blog section styles */
@@ -276,12 +258,8 @@ header nav.socials-navigation a {
   background-image: url(./biker-land-assets/image-5.jpg);
   background-position: center;
   background-size: cover;
-  height: 406px;
-  width: 100%;
-}
-
-.product-navigation {
-    height: 100%;
+  /* height: 406px; */
+  /* width: 100%; */
 }
 
 .product-navigation ul {
@@ -348,24 +326,21 @@ footer a {
   color: #fff;
 }
 
-nav.footer-navigation {
-  padding: 40px 0;
+.footer-navigation ul{
+    text-align: center;
+    padding-top: 20px;
 }
 
-nav.footer-navigation ul {
-  width: 500px;
-  margin: 0 auto;
+.footer-navigation li {
+    list-style: none;
+    display: inline-block;
 }
 
-nav.footer-navigation li {
-  margin: 0 20px;
-  float: left;
-}
-
-nav.footer-navigation a {
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.footer-navigation a {
+    padding: 10px 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .contact-info {
@@ -392,6 +367,7 @@ nav.footer-navigation a {
   width: 300px;
   height: 50px;
   float: left;
+  display: block;
   font-size: 1.8rem;
 }
 
@@ -456,11 +432,17 @@ div.copyright {
 
 @media (max-width: 1140px) {
   h1 {
-    width: 71%;
+    width: 74%;
   }
 }
 
 @media (max-width: 1000px) {
+
+  /* global styles */
+
+  body {
+    line-height: 22px;
+  };
 
   /* header styles */
   h1 {
@@ -476,7 +458,15 @@ div.copyright {
 
   /* blog section styles */
   .blog {
-    height: 350px;
+    height: 430px;
+  }
+
+  .blog-info {
+    width: calc(65% - 10px);
+  }
+
+  .blog-image {
+    width: 35%;
   }
 
   /* product section styles */
@@ -500,11 +490,15 @@ div.copyright {
     width: 366px;
   }
 
+  .subscribe-form button {
+    margin-top: 5px;
+  }
+
 }
 
 @media (max-width: 860px) {
   h1 {
-    width: 77%;
+    width: 82%;
   }
 
   .product-navigation ul {
@@ -513,5 +507,166 @@ div.copyright {
 }
 
 @media (max-width: 768px) {
+    /* global changes */
+
+    body {
+      line-height: 29px;
+    }
+
+    /* header styles */
+    h1 {
+      width: 85%;
+      margin-top: 243px;
+      font-size: 12rem;
+    }
+
+    header i.fa-bars {
+      visibility: visible;    
+  }
+
+  header i.fa-bars:focus,
+  header i.fa-bars:hover {
+      color: #f2a11c;    
+  }
+
+    .header-navigation {
+      visibility: hidden;
+    }
+
+    .socials-navigation {
+      visibility: hidden;
+    }
+
+    /* about styles */
+
+    .about-image,
+    .about-info {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* mission styles */
+
+    .mission-image,
+    .mission-info {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* blog styles */
+
+    .blog {
+      height: 1100px;
+    }
+
+    .blog-info, .blog-image {
+
+    float: left;
+    width: 100%;
+    height: auto;
+  }
+
+    .blog-image {
+      margin: 0 auto;
+    }
+
+    .blog-info {
+      margin-left: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* product section styles */
+
+    .product-navigation ul {
+      padding: 175px 100px;
+    }
+
+    .product-navigation a {
+      font-size: 5rem;
+    }
+
+    .product-span {
+      font-size: 1.5rem;
+    }
+
+    /* footer styles */
+
+    .subscribe-form button, 
+    .subscribe-form form input {
+      width: 300px;
+  }
+
+  nav.footer-navigation {
+    padding: 10px 0;
+  }
+
+  nav.footer-navigation a {
+    font-size: 1.6rem;
+  }
+
+  .subscribe-form button,
+  .subscribe-form form input {
+    height: 40px
+  }
+}
+
+@media (max-width: 625px) {
+
+  /* gram styles */
+
+  .gram-gallery li:nth-of-type(3) {
+    display: none;
+  }
+
+  .the-gram li {
+    width: calc(100% / 2);
+  }
+
+  /* footer styles */
+
+  footer {
+    height: 545px;
+  }
+
+  .subscribe-form,
+  .contact-info {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscribe-form form {
+    margin: 0 auto;
+    width: 290px;
+  }
     
+}
+
+@media (max-width: 560px) {
+  
+  /* header styles */
+
+  h1 {
+    width: 92%;
+    font-size: 10rem;
+  }
+
+  /* blog styles */
+
+  .blog {
+    height: 973px;
+  }
+
+  /* product styles */
+
+  .product {
+    background-position: right;
+  }
+
+  .product-navigation ul {
+    padding: 80px 0;
+  }
 }
