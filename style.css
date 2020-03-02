@@ -8,6 +8,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+
+/* colour palette */
+
 /* Squash
 #F2A11C,
 242, 161, 28
@@ -44,7 +47,6 @@ body {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
-  clear: both;
 }
 
 h1 {
@@ -56,27 +58,6 @@ h1 {
 h2 {
   font-size: 3.5rem;
   font-family: 'Pacifico', sans-serif;
-}
-
-/* button global settings */
-
-.read-button {
-  font-size: 1.8rem;
-  font-family: 'Catamaran', sans-serif;
-  color: #f2a11c;
-  text-transform: uppercase;
-  background-color: #1f2022;
-  display: inline-block;
-  padding: 15px 20px;
-  margin: 0;
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-.read-button:hover,
-.read-button:focus,
-.read-button:active {
-  opacity: 1;
 }
 
 h3 a {
@@ -103,6 +84,27 @@ ul {
 li {
   list-style: none;
   padding: 0;
+}
+
+/* global read more button stylings */
+
+.read-button {
+  font-size: 1.8rem;
+  font-family: 'Catamaran', sans-serif;
+  color: #f2a11c;
+  text-transform: uppercase;
+  background-color: #1f2022;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 0;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.read-button:hover,
+.read-button:focus,
+.read-button:active {
+  opacity: 1;
 }
 
 /* nav li globals */
@@ -151,8 +153,6 @@ header {
   display: inline-block;
   padding: 15px;
 }
-
-/* mobile hamburger menu */
 
 header i.fa-bars {
   position: absolute;
@@ -258,8 +258,6 @@ header nav.socials-navigation a {
   background-image: url(./biker-land-assets/image-5.jpg);
   background-position: center;
   background-size: cover;
-  /* height: 406px; */
-  /* width: 100%; */
 }
 
 .product-navigation ul {
@@ -267,10 +265,9 @@ header nav.socials-navigation a {
 }
 
 .product-navigation li {
-  margin: 0 auto;
   float: left;
+  margin: 0 auto;
   text-align: center;
-  /* padding: 0 10px; */
   width: calc(100% / 3);
 }
 
@@ -288,7 +285,7 @@ header nav.socials-navigation a {
 
 /* end of product section styles */
 
-/* the gram gallery styles */
+/* the gram styles */
 
 .the-gram {
   height: 600px;
@@ -301,7 +298,6 @@ header nav.socials-navigation a {
 
 .the-gram ul {
   list-style: none;
-  clear: both;
 }
 
 .the-gram li {
@@ -311,7 +307,7 @@ header nav.socials-navigation a {
   padding: 0 5px;
 }
 
-/* end of gram section styles */
+/* end of gram styles */
 
 /* footer styles */
 
@@ -326,21 +322,21 @@ footer a {
   color: #fff;
 }
 
-.footer-navigation ul{
-    text-align: center;
-    padding-top: 20px;
+.footer-navigation ul {
+  text-align: center;
+  padding-top: 20px;
 }
 
 .footer-navigation li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 
 .footer-navigation a {
-    padding: 10px 15px;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .contact-info {
@@ -393,8 +389,6 @@ button:active {
   opacity: 1;
 }
 
-/* copy right styles */
-
 p.copyright {
   text-align: center;
   background-color: #000000;
@@ -405,19 +399,13 @@ p.copyright {
   padding-top: 10px;
 }
 
-div.copyright {
+.copyright {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 
 /* end of footer styles */
-
-
-
-/* start of media queries */
-
-
 
 /* max height media querie for screens with less height */
 
@@ -429,6 +417,9 @@ div.copyright {
 
 /* end of screen height media queries */
 
+/* Screen size media queries start here */
+
+/* max-height 1140px */
 
 @media (max-width: 1140px) {
   h1 {
@@ -437,12 +428,11 @@ div.copyright {
 }
 
 @media (max-width: 1000px) {
-
   /* global styles */
 
   body {
     line-height: 22px;
-  };
+  }
 
   /* header styles */
   h1 {
@@ -450,13 +440,13 @@ div.copyright {
     margin-top: 194px;
   }
 
-  /* about section styles */
+  /* about styles */
   .about-info,
   .mission-info {
     padding: 47px;
   }
 
-  /* blog section styles */
+  /* blog styles */
   .blog {
     height: 430px;
   }
@@ -469,12 +459,12 @@ div.copyright {
     width: 35%;
   }
 
-  /* product section styles */
+  /* product styles */
   .product-navigation ul {
-  padding: 120px 170px
+    padding: 120px 170px;
   }
 
-  /* the gram section styles */
+  /* the gram styles */
   .the-gram {
     height: 525px;
   }
@@ -493,110 +483,121 @@ div.copyright {
   .subscribe-form button {
     margin-top: 5px;
   }
-
 }
 
+/* end of max-height 1140px */
+
+/* max-width 860px */
+
 @media (max-width: 860px) {
+  /* header styles */
+
   h1 {
     width: 82%;
   }
+
+  /* product styles */
 
   .product-navigation ul {
     padding: 120px 120px;
   }
 }
 
+/* end of max-width 860px */
+
+/* max width 768px */
+
 @media (max-width: 768px) {
-    /* global changes */
+  /* header styles */
+  h1 {
+    width: 85%;
+    margin-top: 243px;
+    font-size: 12rem;
+  }
 
-    body {
-      line-height: 29px;
-    }
-
-    /* header styles */
-    h1 {
-      width: 85%;
-      margin-top: 243px;
-      font-size: 12rem;
-    }
-
-    header i.fa-bars {
-      visibility: visible;    
+  header i.fa-bars {
+    visibility: visible;
   }
 
   header i.fa-bars:focus,
   header i.fa-bars:hover {
-      color: #f2a11c;    
+    color: #f2a11c;
   }
 
-    .header-navigation {
-      visibility: hidden;
-    }
+  .header-navigation {
+    visibility: hidden;
+  }
 
-    .socials-navigation {
-      visibility: hidden;
-    }
+  .socials-navigation {
+    visibility: hidden;
+  }
 
-    /* about styles */
+  /* about styles */
 
-    .about-image,
-    .about-info {
-      float: none;
-      width: 100%;
-      text-align: center;
-    }
+  .about-image,
+  .about-info {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 
-    /* mission styles */
+  /* mission styles */
 
-    .mission-image,
-    .mission-info {
-      float: none;
-      width: 100%;
-      text-align: center;
-    }
+  .mission-image,
+  .mission-info {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 
-    /* blog styles */
+  /* blog styles */
 
-    .blog {
-      height: 1100px;
-    }
+  .blog {
+    height: 1100px;
+  }
 
-    .blog-info, .blog-image {
-
+  .blog-info,
+  .blog-image {
     float: left;
     width: 100%;
     height: auto;
   }
 
-    .blog-image {
-      margin: 0 auto;
-    }
+  .blog-image {
+    margin: 0 auto;
+  }
 
-    .blog-info {
-      margin-left: 0;
-      padding: 0;
-      text-align: center;
-    }
+  .blog-info {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+  }
 
-    /* product section styles */
+  /* product styles */
 
-    .product-navigation ul {
-      padding: 175px 100px;
-    }
+  .product-navigation ul {
+    padding: 175px 100px;
+  }
 
-    .product-navigation a {
-      font-size: 5rem;
-    }
+  .product-navigation a {
+    font-size: 5rem;
+  }
 
-    .product-span {
-      font-size: 1.5rem;
-    }
+  .product-span {
+    font-size: 1.5rem;
+  }
 
-    /* footer styles */
+  /* the gram styles */
 
-    .subscribe-form button, 
-    .subscribe-form form input {
-      width: 300px;
+  .the-gram {
+    height: 420px;
+  }
+
+  /* footer styles */
+
+  .subscribe-form button,
+  .subscribe-form form input {
+    width: 300px;
   }
 
   nav.footer-navigation {
@@ -609,13 +610,20 @@ div.copyright {
 
   .subscribe-form button,
   .subscribe-form form input {
-    height: 40px
+    height: 40px;
   }
 }
 
-@media (max-width: 625px) {
+/* end of max width 768px */
 
+/* max-width 625px */
+
+@media (max-width: 625px) {
   /* gram styles */
+
+  .the-gram {
+    height: 450px;
+  }
 
   .gram-gallery li:nth-of-type(3) {
     display: none;
@@ -642,16 +650,23 @@ div.copyright {
     margin: 0 auto;
     width: 290px;
   }
-    
+
+  .subscribe-form form input[type='email'] {
+    padding-left: ;
+    text-align: center;
+  }
 }
 
+/* end of max width 625px */
+
+/* max width 560px */
+
 @media (max-width: 560px) {
-  
   /* header styles */
 
   h1 {
     width: 92%;
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   /* blog styles */
@@ -669,4 +684,53 @@ div.copyright {
   .product-navigation ul {
     padding: 80px 0;
   }
+
+  .product-navigation li {
+    float: none;
+  }
 }
+
+/* end of max width 560px */
+
+/* max width 415px */
+
+@media (max-width: 415px) {
+  /* header styles */
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  /* gram styles */
+
+  .the-gram {
+    height: 370px;
+  }
+
+  /* product styles */
+
+  .product-navigation li {
+    padding: 20px 0px;
+    width: 100%;
+  }
+
+  /* footer styles */
+
+  footer {
+    height: 600px;
+  }
+}
+
+/* end of max width 415px */
+
+/* max width 377px */
+
+@media (max-width: 377px) {
+  nav.footer-navigation a {
+    font-size: 1.4rem;
+  }
+}
+
+/* end of max width 377px */
+
+/* end of media queries */
